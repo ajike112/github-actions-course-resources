@@ -2,10 +2,10 @@
 #!/bin/sh
 
 echo "Add files and do local commit"
-git add .
+git add . # git add command stages changes for next commit
 echo "checking status"
 git status
-git commit -am "added GitHub Actions workflows"
+git commit -am "added GitHub Actions workflows" # git commit command creates a commit that includes all staged changes
 
 echo "Pushing to Github Repository"
 git push -u origin master
