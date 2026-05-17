@@ -5,7 +5,7 @@ echo "Add files and do local commit"
 git add . # git add <file name> command stages changes for next commit
 echo "checking status"
 git status
-git commit -am "added output workflow" # git commit command creates a commit that includes all staged changes
+git commit -am "pull request event" # git commit command creates a commit that includes all staged changes
 # git checkout -b <id> command temporarily creates a branch and checks out that branch in one step 
 # git revert <id> command is used to undo commits. It reevrts changes of commit by creating a new commit
 # git branch <name of branch> command is used to create a new branch away from the main or master branch
