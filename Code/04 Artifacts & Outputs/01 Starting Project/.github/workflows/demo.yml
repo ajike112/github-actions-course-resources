@@ -28,7 +28,7 @@ jobs:
           cd "Code/04 Artifacts & Outputs/01 Starting Project"
           npm run test
 
-  build:
+  build_site:
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -54,7 +54,7 @@ jobs:
             Code/04 Artifacts & Outputs/01 Starting Project/package.json
 
   deploy:
-    needs: build
+    needs: build_site
     runs-on: ubuntu-latest
     steps:
       - name: Get code
